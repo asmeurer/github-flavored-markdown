@@ -1189,7 +1189,7 @@ var _EncodeBackslashEscapes = function(text) {
 
 var _DoAutoLinks = function(text) {
 
-	text = text.replace(/<((https?|ftp|dict):[^'">\s]*[^'">,.\s]+)>/gi,"<a href=\"$1\">$1</a>");
+	text = text.replace(/<((https?|ftp|dict):[^'">\s]*[^'">,\.\s]+)>/gi,"<a href=\"$1\">$1</a>");
 
 	// Email addresses: <address@domain.foo>
 
